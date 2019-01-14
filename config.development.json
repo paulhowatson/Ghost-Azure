@@ -1,4 +1,8 @@
 {
+	"url": "https://paulhowatson.azurewebsites.net",
+	"server": {
+		"host": "127.0.0.1"
+    },
     "database": {
         "client": "sqlite3",
         "connection": {
@@ -9,9 +13,18 @@
     "paths": {
         "contentPath": "content/"
     },
+    "privacy": {
+        "useRpcPing": false,
+        "useUpdateCheck": true
+    },
+    "useMinFiles": false,
     "caching": {
-		"frontend": {
-			"maxAge":900
-		}
-	}
+        "theme": {
+            "maxAge": 1000
+        },
+        "admin": {
+            "maxAge": 1000
+        }
+	},
+	"forceAdminSSL": true
 }
